@@ -1,0 +1,135 @@
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --color-primary-100: hsl(225, 100%, 94%);
+  --color-primary-600: hsl(245, 75%, 52%);
+
+  --color-neutral-100: hsl(225, 100%, 98%);
+  --color-neutral-400: hsl(224, 23%, 55%);
+  --color-neutral-700: hsl(223, 47%, 23%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--color-primary-100);
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+h2 {
+  color: var(--color-neutral-700);
+  font-weight: 900;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  color: var(--color-neutral-400);
+}
+
+a {
+  color: var(--color-primary-600);
+  padding-right: 1.5rem;
+}
+
+.container {
+  height: 100%;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__container {
+  margin: 15rem;
+  overflow: hidden;
+  background: var(--color-neutral-100);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem 0 rgb(182, 189, 218);
+}
+
+.card__image {
+  width: 100%;
+}
+
+.content__container {
+  margin: 4rem;
+}
+
+.card__content {
+  text-align: center;
+  margin: 0;
+}
+
+.content__body {
+  margin-bottom: 2rem;
+}
+
+.card__plan {
+  display: flex;
+  background: rgb(235, 238, 252);
+  border-radius: 0.75rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.plan__image {
+  width: 60px;
+  height: 60px;
+  margin: 1.5rem;
+}
+
+.plan__content {
+  padding-right: 3rem;
+}
+
+.content__plan {
+  margin: 0;
+}
+
+.content__price {
+  margin: 0;
+}
+
+.card__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.button--primary {
+  background: var(--color-primary-600);
+  color: var(--color-neutral-100);
+  margin-top: 3rem;
+  box-shadow: 0 1rem 2rem 0 rgb(182, 189, 218);
+}
+
+.button--neutral {
+  background: none;
+  color: var(--color-neutral-400);
+  margin-top: 1rem;
+}
